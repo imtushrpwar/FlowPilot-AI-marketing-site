@@ -3,5 +3,5 @@ export const SITE = {
   url: "https://flow-pilot-ai-marketing-site.vercel.app",
   email: "hello@flowpilot.ai",
   logo: "https://flow-pilot-ai-marketing-site.vercel.app/logo.png",
-  ogImage: "https://flow-pilot-ai-marketing-site.vercel.app/og-image.jpg",
+  ogImage: "https://flow-pilot-ai-marketing-site.vercel.app/og-image.png",
 };

@@ -4,6 +4,7 @@ import SectionTitle from "../components/SectionTitle";
 import Button from "../components/Button";
 import SEO from "../seo/SEO";
 import ServiceSchema from "../seo/ServiceSchema";
+import { SITE } from "../config/site";
 
 const steps = [
   {
@@ -33,7 +34,7 @@ function Product() {
         title="Product | FlowPilot AI"
         description="See how FlowPilot AI automates invoice processing, onboarding, and approvals with AI-powered workflows."
         keywords="workflow automation product, AI operations software, business process automation"
-        url="https://flowpilot-ai.vercel.app/product"
+        url={`${SITE.url}/product`}
       />
       <ServiceSchema />
 

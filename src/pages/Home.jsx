@@ -8,6 +8,7 @@ import SEO from "../seo/SEO";
 import Schema from "../seo/Schema";
 import FAQ from "../components/FAQ";
 import FAQSchema from "../seo/FAQSchema";
+import { SITE } from "../config/site";
 
 function Home() {
   return (
@@ -16,7 +17,7 @@ function Home() {
         title="FlowPilot AI | Automate Business Workflows"
         description="AI workflow automation software helping businesses save time and improve productivity."
         keywords="AI Automation, SaaS, Workflow Automation, CRM, Productivity"
-        url="https://flowpilot-ai.vercel.app/"
+        url={`${SITE.url}/`}
       />
 
       <Schema />

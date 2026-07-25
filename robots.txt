@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://flow-pilot-ai-marketing-site.vercel.app/sitemap.xml

@@ -5,6 +5,7 @@ import SectionTitle from "../components/SectionTitle";
 import Button from "../components/Button";
 import SEO from "../seo/SEO";
 import ContactSchema from "../seo/ContactSchema";
+import { SITE } from "../config/site";
 
 function Field({ label, name, value, onChange, type = "text" }) {
   const id = `contact-${name}`;
@@ -52,7 +53,7 @@ function Contact() {
         title="Contact | FlowPilot AI"
         description="Get in touch with the FlowPilot AI team. We reply within one business day."
         keywords="contact FlowPilot AI, workflow automation support, book a demo"
-        url="https://flowpilot-ai.vercel.app/contact"
+        url={`${SITE.url}/contact`}
       />
       <ContactSchema />
 

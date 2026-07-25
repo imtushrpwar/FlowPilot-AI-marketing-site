@@ -4,6 +4,7 @@ import SectionTitle from "../components/SectionTitle";
 import PricingCard from "../components/PricingCard";
 import SEO from "../seo/SEO";
 import PricingSchema from "../seo/PricingSchema";
+import { SITE } from "../config/site";
 
 const plans = [
   {
@@ -56,7 +57,7 @@ function Pricing() {
         title="Pricing | FlowPilot AI"
         description="Simple, transparent pricing for FlowPilot AI. Start free, upgrade as your automation needs grow."
         keywords="workflow automation pricing, AI automation plans, FlowPilot AI cost"
-        url="https://flowpilot-ai.vercel.app/pricing"
+        url={`${SITE.url}/pricing`}
       />
       <PricingSchema plans={plans} />
 

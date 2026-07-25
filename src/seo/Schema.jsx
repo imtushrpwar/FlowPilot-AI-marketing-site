@@ -1,18 +1,18 @@
+import { SITE } from "../config/site";
+
 function Schema() {
 
   const schema = {
 
-    "@context":"https://schema.org",
+    "@context": "https://schema.org",
 
-    "@type":"Organization",
+    "@type": "Organization",
 
-    name:"FlowPilot AI",
+    name: SITE.name,
+    url: SITE.url,
+    logo: SITE.logo,
 
-    url:"https://flowpilot-ai.vercel.app",
-
-    logo:"https://flowpilot-ai.vercel.app/logo.png",
-
-    sameAs:[
+    sameAs: [
       "https://linkedin.com",
       "https://twitter.com"
     ]
@@ -24,7 +24,7 @@ function Schema() {
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
-        __html:JSON.stringify(schema),
+        __html: JSON.stringify(schema),
       }}
     />
 

@@ -1,11 +1,12 @@
 import { Helmet } from "react-helmet-async";
+import { SITE } from "../config/site";
 
 function SEO({
   title,
   description,
   keywords,
   url,
-  image = "/og-image.jpg",
+  image = SITE.ogImage,
 }) {
   return (
     <Helmet>
@@ -34,18 +35,25 @@ function SEO({
 
       {/* Open Graph */}
 
-      <meta property="og:type" content="website"/>
+      <meta property="og:site_name" content="FlowPilot AI" />
 
-      <meta property="og:title" content={title}/>
+
+      <meta property="og:locale" content="en_US" />
+
+      <meta name="theme-color" content="#2563EB" />
+
+      <meta property="og:type" content="website" />
+
+      <meta property="og:title" content={title} />
 
       <meta
         property="og:description"
         content={description}
       />
 
-      <meta property="og:url" content={url}/>
+      <meta property="og:url" content={url} />
 
-      <meta property="og:image" content={image}/>
+      <meta property="og:image" content={image} />
 
       {/* Twitter */}
 

@@ -1,4 +1,7 @@
 // src/seo/ServiceSchema.jsx
+import { SITE } from "../config/site";
+
+
 function ServiceSchema() {
   const schema = {
     "@context": "https://schema.org",
@@ -6,15 +9,15 @@ function ServiceSchema() {
     serviceType: "Workflow Automation Software",
     provider: {
       "@type": "Organization",
-      name: "FlowPilot AI",
-      url: "https://flowpilot-ai.vercel.app",
+      name: SITE.name,
+      url: SITE.url,
     },
     areaServed: "Worldwide",
     description:
       "FlowPilot AI automates repetitive business operations with AI-powered workflows, real-time analytics, and enterprise-grade security.",
     offers: {
       "@type": "Offer",
-      url: "https://flowpilot-ai.vercel.app/pricing",
+      url: `${SITE.url}/pricing`,
     },
   };
 

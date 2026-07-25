@@ -1,18 +1,21 @@
 // src/seo/ContactSchema.jsx
+import { SITE } from "../config/site";
+
+
 function ContactSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     name: "Contact FlowPilot AI",
-    url: "https://flowpilot-ai.vercel.app/contact",
+    url:  `${SITE.url}/contact`,
     about: {
       "@type": "Organization",
-      name: "FlowPilot AI",
-      url: "https://flowpilot-ai.vercel.app",
+      name: SITE.name,
+      url: SITE.url,
       contactPoint: {
         "@type": "ContactPoint",
         contactType: "customer support",
-        email: "hello@flowpilot-ai.example",
+        email: SITE.email,
         availableLanguage: "English",
       },
     },

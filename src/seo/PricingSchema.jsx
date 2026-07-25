@@ -1,4 +1,6 @@
 // src/seo/PricingSchema.jsx
+import { SITE } from "../config/site";
+
 function PricingSchema({ plans }) {
   const schema = {
     "@context": "https://schema.org",
@@ -18,7 +20,7 @@ function PricingSchema({ plans }) {
         price: plan.price,
         priceCurrency: "USD",
         availability: "https://schema.org/InStock",
-        url: "https://flowpilot-ai.vercel.app/pricing",
+        url:`${SITE.url}/pricing`,
       })),
   };
 
